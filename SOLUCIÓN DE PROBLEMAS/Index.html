@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>solución de problemas</title>
+</head>
+<body>
+    <h2>Solucion de problemas de la pasteleria</h2>
+<script>
+        // SUELDO DE LOS REPOSTEROS 
+    
+        let cantidadReposteros = parseInt(prompt("¿Cuantos reposteros trabajan en la reposteria?"));
+        let sueldosReposteros = 0;
+        for(let i = 1; i <= cantidadReposteros; i++){
+            let paga = parseFloat(prompt("Introduce el valor de paga de los reposteros" + i));
+            let sueldo = paga + paga;
+            sueldosReposteros += sueldo;
+        }
+         
+         // RESULTADO FINAL 
+
+         let pagaTotal = sueldosReposteros;
+         alert("El salario del repostero es: " + pagaTotal);
+         console.log("la paga es:", pagaTotal);
+</script>   
+</body>
+</html>
