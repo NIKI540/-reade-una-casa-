@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área de la casa</title>
+</head>
+
+<body>
+
+    <h1>Calculadora de áreas</h1>
+
+    <script>
+
+        
+        // ÁREA DE TRIÁNGULOS
+        
+        let cantidadTriangulos = parseInt(prompt("¿Cuántos triángulos tiene la casa?"));
+        let areaTriangulos = 0;
+        for(let i = 1; i <= cantidadTriangulos; i++){
+            let base = parseFloat(prompt("Introduce la base del triángulo " + i));
+            let altura = parseFloat(prompt("Introduce la altura del triángulo " + i));
+            let area = (base * altura) / 2;
+            areaTriangulos += area;
+        }
+
+        
+        // ÁREA DE CUADRADOS
+        
+        let cantidadCuadrados = parseInt(
+            prompt("¿Cuántos cuadrados tiene la casa?")
+        );
+        let areaCuadrados = 0;
+        for(let i = 1; i <= cantidadCuadrados; i++){
+            let lado = parseFloat(
+                prompt("Introduce el lado del cuadrado " + i)
+            );
+            let area = lado * lado;
+            areaCuadrados += area;
+        }
+
+        // =========================
+        // RESULTADO FINAL
+        // =========================
+
+        let areaTotal = areaTriangulos + areaCuadrados;
+
+        alert("El área total es: " + areaTotal);
+
+        console.log("Área total:", areaTotal);
+
+    </script>
+
+</body>
+</html>
