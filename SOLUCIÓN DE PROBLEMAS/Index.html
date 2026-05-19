@@ -41,9 +41,23 @@
             alert("opcion invalida");
           }
 
+          //TRANSPORTE SI DESEAN 
+
+          let opcionTransporte = parseInt(prompt("Desea transporte para la casa de chocolate:\n" + "1-si\n" + "2-no"));
+          let opcion = 0;
+          if(opcionTransporte ==1){
+            opcion = 5000
+            alert("Elegiste si para el transporte");
+          } else if("opcionTransporte" ==2){
+            opcion = 0
+            alert("elegiste no utilizar el transporte");
+          } else{
+            alert("opcion invalida");
+          }
+
           // RESULTADO FINAL 
 
-         let costoTotal = sueldosReposteros + valorProductos + precio;
+         let costoTotal = sueldosReposteros + valorProductos + precio + opcion;
          alert("El salario del repostero es: " + costoTotal);
          console.log("la paga es:", costoTotal);
 </script>   
