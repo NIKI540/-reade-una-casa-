@@ -55,9 +55,19 @@
             alert("opcion invalida");
           }
 
+          // SERVICIOS
+
+           let cantidadServiosPublicos = presenInt(prompt("¿Cuantos servicios publicos hay?"));
+           let valorServicosPublicos  =0;
+           for(let i = 0; i < cantidadServiosPublicos; i++){
+            let valorServicio = parseInt("Introduce el valor del servicio publico" + (i + 1));
+            let servicioPublico = valorServicio;
+            valorServicosPublicos =+ servicioPublico
+           }
+
           // RESULTADO FINAL 
 
-         let costoTotal = sueldosReposteros + valorProductos + precio + opcion;
+         let costoTotal = sueldosReposteros + valorProductos + precio + opcion + valorServicosPublicos;
          alert("El salario del repostero es: " + costoTotal);
          console.log("la paga es:", costoTotal);
 </script>   
