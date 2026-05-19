@@ -13,7 +13,7 @@
     <script>
 
         
-        // ÁREA DE TRIÁNGULOS
+        // Área de triangulos
         
         let cantidadTriangulos = parseInt(prompt("¿Cuántos triángulos tiene la casa?"));
         let areaTriangulos = 0;
@@ -25,30 +25,32 @@
         }
 
         
-        // ÁREA DE CUADRADOS
+        // Área de cuadrados
         
-        let cantidadCuadrados = parseInt(
-            prompt("¿Cuántos cuadrados tiene la casa?")
-        );
+        let cantidadCuadrados = parseInt(prompt("¿Cuántos cuadrados tiene la casa?"));
         let areaCuadrados = 0;
         for(let i = 1; i <= cantidadCuadrados; i++){
-            let lado = parseFloat(
-                prompt("Introduce el lado del cuadrado " + i)
-            );
+            let lado = parseFloat(prompt("Introduce el lado del cuadrado " + i));
             let area = lado * lado;
             areaCuadrados += area;
         }
 
-        // =========================
+
+        //Área de rectangulos
+        let cantidadRectangulos = parseInt(prompt("¿Cuántos rectangulos tiene la casa?"));
+        let areaRectangulos = 0;
+        for(let i = 1; i <= cantidadRectangulos; i++){
+            let base = parseFloat(prompt("Introduce la base del rectangulo" + 1));
+            let altura = parseFloat(prompt("Introcuce la altura del rectangulo" + 1));
+            let area = base * altura;
+            areaRectangulos += area;
+        }
+
         // RESULTADO FINAL
-        // =========================
 
-        let areaTotal = areaTriangulos + areaCuadrados;
-
+        let areaTotal = areaTriangulos + areaCuadrados + areaRectangulos;
         alert("El área total es: " + areaTotal);
-
         console.log("Área total:", areaTotal);
-
     </script>
 
 </body>
