@@ -7,7 +7,7 @@
 <body>
     <h2>Solucion de problemas de la pasteleria</h2>
 <script>
-        // SUELDO DE LOS REPOSTEROS 
+          // SUELDO DE LOS REPOSTEROS 
     
          let cantidadReposteros = parseInt(prompt("¿Cuantos reposteros trabajan en la reposteria?"));
          let sueldosReposteros = 0;
@@ -26,11 +26,27 @@
             let cantidad = valor;
             valorProductos += cantidad
           }
-         // RESULTADO FINAL 
 
-         let pagaTotal = sueldosReposteros + valorProductos;
-         alert("El salario del repostero es: " + pagaTotal);
-         console.log("la paga es:", pagaTotal);
+          // COSTO DE LA VITRINA 
+
+          let opcionVitrina = parseInt(prompt("Elija la opción que mas le parezca:\n" + "1-vitrina economica\n" + "2-vitrina cara"));
+          let precio = 0;
+          if(opcionVitrina ==1){
+            precio = 5000
+            alert("Elejiste vitrina economica");
+          }
+          if(opcionVitrina ==2){
+            precio = 10000
+            alert("Elejiste vitrina cara");
+          }else{
+            alert("opcion invalida");
+          }
+
+          // RESULTADO FINAL 
+
+         let costoTotal = sueldosReposteros + valorProductos + opcionVitrina;
+         alert("El salario del repostero es: " + costoTotal);
+         console.log("la paga es:", costoTotal);
 </script>   
 </body>
 </html>
