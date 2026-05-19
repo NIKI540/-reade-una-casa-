@@ -9,17 +9,26 @@
 <script>
         // SUELDO DE LOS REPOSTEROS 
     
-        let cantidadReposteros = parseInt(prompt("¿Cuantos reposteros trabajan en la reposteria?"));
-        let sueldosReposteros = 0;
-        for(let i = 0; i < cantidadReposteros; i++){
+         let cantidadReposteros = parseInt(prompt("¿Cuantos reposteros trabajan en la reposteria?"));
+         let sueldosReposteros = 0;
+         for(let i = 0; i < cantidadReposteros; i++){
             let paga = parseFloat(prompt("Introduce el valor de paga de los reposteros" + (i + 1)));
-            let sueldo = paga ;
+            let sueldo = paga;
             sueldosReposteros += sueldo;
-        }
+          }
          
+          // MATERIA PRIMA 
+
+         let cantidadMateriales = parseInt(prompt("¿Cuantos materiales se gastarón?"));
+         let valorProductos = 0;
+         for(let i = 0; i < cantidadMateriales; i++){
+            let valor = parseFloat(prompt("Introcude el valor de los productos" + (i + 1)));
+            let cantidad = valor;
+            valorProductos += cantidad
+          }
          // RESULTADO FINAL 
 
-         let pagaTotal = sueldosReposteros;
+         let pagaTotal = sueldosReposteros + valorProductos;
          alert("El salario del repostero es: " + pagaTotal);
          console.log("la paga es:", pagaTotal);
 </script>   
