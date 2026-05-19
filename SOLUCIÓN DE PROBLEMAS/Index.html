@@ -11,8 +11,8 @@
     
         let cantidadReposteros = parseInt(prompt("¿Cuantos reposteros trabajan en la reposteria?"));
         let sueldosReposteros = 0;
-        for(let i = 0; i <= cantidadReposteros; i){
-            let paga = parseFloat(prompt("Introduce el valor de paga de los reposteros" ));
+        for(let i = 0; i < cantidadReposteros; i++){
+            let paga = parseFloat(prompt("Introduce el valor de paga de los reposteros" + (i + 1)));
             let sueldo = paga ;
             sueldosReposteros += sueldo;
         }
