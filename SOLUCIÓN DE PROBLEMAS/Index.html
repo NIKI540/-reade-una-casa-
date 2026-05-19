@@ -57,10 +57,10 @@
 
           // SERVICIOS
 
-           let cantidadServiosPublicos = presenInt(prompt("¿Cuantos servicios publicos hay?"));
+           let cantidadServiosPublicos = parseInt(prompt("¿Cuantos servicios publicos hay?"));
            let valorServicosPublicos  =0;
            for(let i = 0; i < cantidadServiosPublicos; i++){
-            let valorServicio = parseInt("Introduce el valor del servicio publico" + (i + 1));
+            let valorServicio = parseInt(prompt("Introduce el valor del servicio publico" + (i + 1)));
             let servicioPublico = valorServicio;
             valorServicosPublicos =+ servicioPublico
            }
