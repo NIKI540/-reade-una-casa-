@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prueba de Área de un cilindro</h2>
+
+    <script>
+         
+         //Área de cilindros
+
+         let cantidadCilindros = parseInt(prompt("¿Cuantos cilindros tiene la casa?"));
+         let areaCilindros = 0;
+         for(let i = 1; i <= cantidadCilindros; i++){
+            let radio = parseFloat(prompt("Introduce el radio del cilindro" + i));
+            let altura = parseFloat(prompt("Introduce la altura del cilindro" + i));
+            let area = 2 * Math.PI * radio (radio + altura);
+         }
+
+         //Área total
+         alert("El área total es: " + areaTotal);
+         console.log("Área total:", areaTotal);
+
+    </script>
+</body>
+</html>
